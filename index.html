@@ -1,9 +1,514 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Logan Hollmer</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="font-mfizz-2.4.1\font-mfizz.css">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
 <body>
+    <header>
+        <div class="menu-toggler">
+            <div class="bar half start"></div>
+            <div class="bar"></div>
+            <div class="bar half end"></div>
+        </div>
+        <nav class="top-nav">
+            <div class="ul nav-list">
+                <li>
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>           <li>
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+            </div>
+        </nav>
+        <div class="landing-text">
+            <h1>Logan Hollmer</h1>
+            <h6>Software Developer</h6>
+        </div>
+    </header>
 
-<h1>Logan Hollmer</h1>
-<p>csc 131. 10/5/2019</p>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="profile-img " data-aos="fade-right" data-aos-delay="300">
+                <img src="images/new_background.jpg" alt="A headshot of Logan Hollmer">
+            </div>
+            <div class="about-details" data-aos="fade-left" data-aos-delay="600">
+                <div class="about-heading">
+                    <h1>About</h1>
+                    <h6>Me</h6>
+                </div>
+                <p>
+                    Software Engineer / Software Developer, graduating with my Bachelor's in Computer Science 
+                    from California State University, Sacramento in May 2021. My specialty is Machine Learning 
+                    and Artificial Intelligence. Passionate about problem solving and producing high quality code. 
+                    I have experience in game design, git, database management, Agile development (SCRUM), and more. 
+                </p>
+                <div class="social-media">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="https://www.linkedin.com/in/logan-hollmer/" class="icon-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/LoganHollmer" class="icon-link">
+                                <i class="fab fa-github-square"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
+        <!--portfolio-->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-heading">
+                    <h1>Portfolio</h1>
+                    <h6>Check out some of my recent projects!</h6>
+                </div>
+    
+                <!--portfolio item-->
+                <div class="portfolio-item">
+                    <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
+                        <img src="images/Tower-Defense-Game.png" alt="Picture of Tower Defense Game">
+                    </div>
+                    <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
+                        <h6>Andriod Development</h6>
+                        <h1>Tower Defense Game for Andriod</h1>
+                        <p>
+                            Developed an tower defnese game for the Andriod platform with another student 
+                            during CSC-133 "Object-Oriented Computer Graphics Programming" class at Sacramento
+                            State University. The entire project was written by hand including the game engine, view, etc. 
+                            In this project we focused on OOP principles, design patterns, and Agile development.
+                        </p>
+                        <a href="https://github.com/Warthog710/Tower-Defense-Game" class="cta">Github Repo</a>
+                    </div>
+                </div>
+    
+                <!--portfolio item alternated text+img-->
+                <div class="portfolio-item">
+                    <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="300">
+                        <h6>Unity C# development</h6>
+                        <h1>RPG Game using Unity</h1>
+                        <p>
+                            I was the main game developmer for a 2D RPG game for PC using Unity. I was responsible designing and implementing 
+                            the game's architecture and class system. This included writing scripts in C# to implement the 
+                            combat system, movement, dialog, and more.
+                        </p>
+                        <a href="#" onclick="return false;" class="cta">More Details Coming Soon</a>
+                    </div>
+                    <div class="portfolio-img" data-aos="fade-left" data-aos-delay="600">
+                        <img src="images/game pic.PNG" alt="Project coming soon image" >
+                    </div>
+                </div>
+    
+                <!--portfolio item-->
+                <div class="portfolio-item">
+                    <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
+                        <img src="images/updated img.png" alt="Project coming soon image">
+                    </div>
+                    <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
+                        <h6>Machine Learning</h6>
+                        <h1>Business Star Predictor</h1>
+                        <p>
+                            I built, trained, and tested a fully connect neural network to predict the star rating 
+                            for a business based on a TF-IDF representaion of the reviews for each business. 
+                        </p>
+                        <a href="https://colab.research.google.com/drive/1AfC9Y8abxOfKvNekrJoUbNw-bn3TbNjh?usp=sharing" class="cta">Google Colab Page</a>
+                    </div>
+                </div>
+
+                <!--portfolio item alternated text+img-->
+                <div class="portfolio-item">
+                    <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="300">
+                        <h1>Want to see more?</h1>
+                        <p>
+                            I have worked on and development many more projects, from machine learning to simple
+                        </p>
+                        <a href="testPage.html" class="cta">View Details</a>
+                    </div>
+                    <div class="portfolio-img" data-aos="fade-left" data-aos-delay="600">
+                        <img src="images/project_coming_soon.png" alt="Project coming soon image" >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!--programming languages-->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Core Programming Languages</h1>
+                <h6>What I code in</h6>
+            </div>
+            <!--programming languages-->
+            <div class="my-skills">
+
+                 <!--Python-->
+                <div class="skill" data-aos="fade-in" data-aos-delay="300">
+                    <div class="icon-container">
+                        <i class="fab fa-python">
+
+                        </i>
+                    </div>
+                    <h1>Python</h1>
+                    <p>
+                        Python is currently my most used language. I have several years of experience writing 
+                        programs in Python both for school and in the work place. 
+                        I have used Python to implement data structures and algorythms, preform machine learning, 
+                        write scripts, preform data analysis and visualization, and more!
+
+                    </p>
+                </div>
+
+                <!-- C++ -->
+                <div class="skill" data-aos="fade-in" data-aos-delay="600">
+                    <div class="icon-container">
+                        <i class="icon-cplusplus">
+
+                        </i>
+                    </div>
+                    <h1>C++</h1>
+                    <p>
+                        C++ has been an invaluable language for me and I haved used it extensively for 
+                        writing efficent programs and algorythms. In school I have used a mix of C and C++ 
+                        in my data structures and algorythms classes, UNIX classes, and operating systems class. 
+                        I have also used C++ in the workplace to simulate IoT devices.
+                    </p>
+                </div>
+                <!--CSS SKILL-->
+                <div class="skill" data-aos="fade-in" data-aos-delay="600">
+                    <div class="icon-container">
+                        <i class="fab fa-java">
+
+                        </i>
+                    </div>
+                    <h1>Java</h1>
+                    <p>
+                        Java was one of the first programming languages that I learned to use and have 
+                        used it in many of my classes. I have used it in my data stuctures and alogythms classes, 
+                        object-oriented design classes, and in general programming classes. I have also created several 
+                        project using Java including some featured in my portfolio.
+                    </p>
+                </div>
+
+                <!--Other languages-->
+                <div class="skill" data-aos="fade-in" data-aos-delay="600">
+                    <div class="icon-container">
+                        <i class="fas fa-laptop-code">
+
+                        </i>
+                    </div>
+                    <h1>Other Assorted Experience</h1>
+                    <ul>SQL</ul>
+                    <ul>CUDA</ul>
+                    <ul>C#</ul>
+                    <ul>HTML/CSS</ul>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Techincal Skills-->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Technical Skills</h1>
+                <h6>Why I'm a good software engineer</h6>
+            </div>
+            <!--actual skills-->
+            <div class="my-skills">
+
+                    <!--Agile Development-->
+                <div class="skill" data-aos="fade-in" data-aos-delay="300">
+                    <div class="icon-container">
+                        <i class="fab fa-dev">
+
+                        </i>
+                    </div>
+                    <h1>Agile Development</h1>
+                    <p>
+                        I have had followed Agile Development practices in several of my projects both 
+                        for work and for school. Specifically I have used SCRUM methodologies to develop 
+                        an evolving product that met the clients needs.
+                    </p>
+                </div>
+
+                <!--Scource control-->
+                <div class="skill" data-aos="fade-in" data-aos-delay="600">
+                    <div class="icon-container">
+                        <i class="fas fa-code-branch">
+
+                        </i>
+                    </div>
+                    <h1>Source Control</h1>
+                    <p>
+                        Source control is the corner stone of modern software develop. 
+                        Whether it is a project for school or work, I often use some form of source control 
+                        to track and implement changes. I have experience using GitHub, Space, and GitLab.
+                    </p>
+                </div>
+                <!--OOP -->
+                <div class="skill" data-aos="fade-in" data-aos-delay="600">
+                    <div class="icon-container">
+                        <i class="far fa-object-group">
+
+                        </i>
+                    </div>
+                    <h1>Obect-Orientated Programming</h1>
+                    <p>
+                        I have a strong understanding of Obect-Orientated Programming and it can be seen is the 
+                        code that I write. At school I have had the opportunity to study and practices OOP, this 
+                        has translated into my work enviroment as I provided well designed and maintainable code 
+                        in all my projects.
+                    </p>
+                </div>
+
+                <!--Design Patterns-->
+                <div class="skill" data-aos="fade-in" data-aos-delay="600">
+                    <div class="icon-container">
+                        <i class="fas fa-pencil-ruler">
+
+                        </i>
+                    </div>
+                    <h1>Design patterns</h1>
+                    <p>
+                        Object-Orientated Design can be challenging and design patterns can help to solve many of 
+                        these challenges in efficent ways. I have implented a host of different patterns including, 
+                        but not limited to: Factory patterns, Builder patterns, Decorator pattern, Observer pattern, etc. 
+                        Vist my Tower Defense game for an example of how I have implement these.
+                    </p>
+                </div>
+
+                <!--Problem solving-->
+                <div class="skill" data-aos="fade-in" data-aos-delay="600">
+                    <div class="icon-container">
+                        <i class="fas fa-brain">
+
+                        </i>
+                    </div>
+                    <h1>Problem Solving Skills</h1>
+                    <p>
+                        I have exibited my problem solving skills both in school and in the workplace. 
+                        Whether it is comming up with a unique algorythm, refactoring, or writing a new 
+                        program. I have come up with simple, maintainable solutions to complex problems.
+                    </p>
+                </div>
+
+                <!--Qucik Learner-->
+                <div class="skill" data-aos="fade-in" data-aos-delay="600">
+                    <div class="icon-container">
+                        <i class="fas fa-hourglass-half">
+
+                        </i>
+                    </div>
+                    <h1>Quick Learner</h1>
+                    <p>
+                        My ability to quickly learn and adapt is one of my greatest strengths. In my 
+                        professional experience I have had to quickly learn new languages, libraries, best practices, etc. 
+                        By quickly learning these I have been a valuable member to the teams I have worked with. 
+                    </p>
+                </div>
+
+                <!--Debugging and testing-->
+                <div class="skill" data-aos="fade-in" data-aos-delay="600">
+                    <div class="icon-container">
+                        <i class="fas fa-clipboard-list">
+
+                        </i>
+                    </div>
+                    <h1>Debugging and Testing</h1>
+                    <p>
+                        I pride myself in doing thorough testing and delivering high quality code. 
+                        I have exibited my ability to do this in a pervious position where I was able to 
+                        catch bugs several previously undetected bugs and provide a quick solution.
+                    </p>
+                </div>
+
+                <!--Data structures and Algorithms-->
+                <div class="skill" data-aos="fade-in" data-aos-delay="600">
+                    <div class="icon-container">
+                        <i class="fas fa-project-diagram">
+
+                        </i>
+                    </div>
+                    <h1>Data Structures and Algorithms</h1>
+                    <p>
+                        I have taken several Data Structures and Algorithms classes at differening level and with 
+                        several differnt languages. This has given me a thorough understanding of when and how to 
+                        implement them. This understanding has further allowed me to develop custom algrythms based 
+                        on the knowledge that I gain.
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- soft skills-->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Soft Skills</h1>
+                <h6>How I communicate and work</h6>
+            </div>
+            <!--actual skills-->
+            <div class="my-skills">
+
+                 <!-- Conflict Resolution -->
+                <div class="skill" data-aos="fade-in" data-aos-delay="300">
+                    <div class="icon-container">
+                        <i class="far fa-smile">
+
+                        </i>
+                    </div>
+                    <h1>Conflict Resolution</h1>
+                    <p>
+                        My conflict resolution skills has allowed me to handle and manage conflicts when they arrise. 
+                        I can manage stressful situations while remaining calm, control my emotions, and communicate 
+                        calmly and clearly. 
+                    </p>
+                </div>
+
+                <!--Time Management-->
+                <div class="skill" data-aos="fade-in" data-aos-delay="600">
+                    <div class="icon-container">
+                        <i class="far fa-clock">
+
+                        </i>
+                    </div>
+                    <h1>Time Management</h1>
+                    <p>
+                        By managing my time I have been able to consistly finish projects on time. 
+                        I priotize getting projects started early and make sure to add debugging and 
+                        testing time into the project estimate.
+                    </p>
+                </div>
+                <!--Team Player-->
+                <div class="skill" data-aos="fade-in" data-aos-delay="600">
+                    <div class="icon-container">
+                        <i class="fas fa-users">
+
+                        </i>
+                    </div>
+                    <h1>Team Player</h1>
+                    <p>
+                        Over the course of my professional and school experience I have had to work in countless 
+                        teams and group projects. I have efficiently collaborate, manged conflict, and engage with other team members, 
+                        even across other disciplines.
+                    </p>
+                </div>
+
+                <!--Interpersonal Communication-->
+                <div class="skill" data-aos="fade-in" data-aos-delay="600">
+                    <div class="icon-container">
+                        <i class="far fa-comments">
+
+                        </i>
+                    </div>
+                    <h1>Interpersonal Communication</h1>
+                    <p>
+                        I believe that my excellent verbal and written communication skills are my greatest strength.
+                        I am able to work well with many different people, group, and communicatio styles. This allows 
+                        me to be a highly productive member of and project I work on.
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--experience-->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Experience</h1>
+                <h6>Some of my recent work experience</h6>
+            </div>
+            <div class="timeline" data-aos="fade-down" data-aos-delay="300">
+                <ul>
+                    <li class="date" data-date="Jan-2021 - Present">
+                        <h1>Machine Learning Engineer - ScholarHub</h1>
+                        <p>Researched NLP models (BERT, Text to Text Transformer, TF-IDF, WordVectors, etc.) 
+                            to implement semantic searching and question answering, resulting in alpha version 
+                            of semantic search engine for custom database.
+                        </p>
+                    </li>
+                    <li class="date" data-date="Sep-2020 - Present">
+                        <h1>Software Engineer - Dialog Semiconductor</h1>
+                        <p>Developed a C++ program through the entire SDLC to simulate IoT devices, 
+                            resulting in efficient testing time with less hardware, the project followed 
+                            SCRUM (Agile) methodologies.
+                        </p>
+                    </li>
+                    <li class="date" data-date="May-2020 - Oct 2020">
+                        <h1>Game Devloper - Magix Game Studio</h1>
+                        <p>Architected a 2D RPG game, utilizing Unity and C# to implement combat systems, 
+                            dialog, etc. Communicated across development and design departments to implement 
+                            assets and storyline into the game.
+                        </p>
+                    </li>
+                    <li class="date" data-date="Dec 2019 - Feb 2020">
+                        <h1>Software Engineering Intern - Adesto Technologies</h1>
+                        <p>Developed a Python script to convert and format engineering data 
+                            that decreased time spent analyzing and converting data from 1 day to 3 seconds. 
+                            It also completely removed conversion errors associated with translating data.
+                        </p>
+                    </li>
+                    <li class="date" data-date="Jun 2019 - Aug 2019">
+                        <h1>Software Engineering Intern - Adesto Technologies</h1>
+                        <p>Developed a custom Python algorithm that used data splitting and 
+                            lazy loading to decrease record search and conversion time by 99%. 
+                            The script efficiently extracted the required data from over a billion 
+                            different entries and displayed it in a visually understandable way.
+                        </p>
+                    </li>
+                    <li class="date" data-date="May 2018 - Sep 2018">
+                        <h1>Machine Learning Intern - Kashmir World Foundation -</h1>
+                        <p>Used machine learning (TensorFlow and YOLO) to detect images with 
+                            endangered snow leopards. Resulting in program that correctly detected 
+                            snow leopards 94% of the time, and achieved a 86% accuracy on other local wildlife.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="copyright">
+        <div class="up" id="up">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <p>&copy; 2021 Logan Hollmer</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
 </body>
-</html> 
+</html>
