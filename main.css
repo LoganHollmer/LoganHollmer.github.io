@@ -2,7 +2,9 @@
 
 :root{
 
-    --clr--gunmetal: #FeFFFF;
+    --clr--teal: #45A29E; /*#66fcf1*/ /*45A29E*/
+    --clr--grey: #c5c6c7;
+    --clr--black: #0B0C10;
     --clr--thatch: #a67f78;
     --clr--elephant: #8f8681;
     --clr--mushroom: #e1dcd9;
@@ -16,14 +18,14 @@
 
 html{
     font-size: 10px;
-    font-family: 'Playfair Display', sans-serif;
-    color: var(--clr--gunmetal);
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--clr--grey);
 }
 
 body{
     width: 100%;
     height: 100%;
-    background: url("images/newbg.png") no-repeat center fixed;
+    background: url("images/3.png") no-repeat center fixed;
     background-size: cover;
 }
 
@@ -32,12 +34,13 @@ section{
 }
 a{
     text-decoration: none;
-    color: var(--clr--thatch);
+    color: var(--clr--teal);
 }
 
 p{
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
 }
 
 img{
@@ -63,12 +66,13 @@ img{
 }
 
 .section-heading h1{
-    font-size: 3.5rem;
+    font-size: 5rem;
     color: rbga(255, 255, 255, 0.3);
     text-transform: uppercase;
     font-weight: 300;
     position: relative;
     margin-bottom: 1rem;
+    color: var(--clr--teal);
 }
 
 .section-heading h1::before,
@@ -95,8 +99,9 @@ img{
 }
 
 .section-heading h6{
-    font-size: 1.6rem;
+    font-size: 3rem;
     font-weight: 300;
+    color: var(--clr--teal);
 }
 
 .has-margin-right{
@@ -117,7 +122,7 @@ header{
     position: fixed;
     top: -200vh; /* hide for right now*/ 
     z-index: 50;
-    background-color: #f0e4d4; /*#F0E4D4*/
+    background-color: var(--clr--black); /*#F0E4D4*/
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
     transition: all 650ms cubic-bezier(1,0,0,1);
@@ -139,7 +144,7 @@ li{
 
 /* set nav link fonts*/
 .nav-link{
-    font-family: 'Playfair Display', cursive;
+    font-family: 'Bebas Neue', cursive;
     font-size: 5rem;
     padding: 1rem;
 }
@@ -147,7 +152,7 @@ li{
 /* set nav link hover effect*/
 .nav-link:hover,
 .nav-link:focus{
-    background: linear-gradient(to top,var(--clr--elephant), var(--clr--gunmetal));
+    background: linear-gradient(to top,var(--clr--grey), var(--clr--grey));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -179,7 +184,7 @@ li{
 }
 
 .bar{
-    background: linear-gradient(to right, var(--clr--gunmetal),var(--clr--elephant));
+    background: linear-gradient(to right, var(--clr--teal),var(--clr--grey));
     width: 100%;
     height: 4px;
     border-radius: 0.8rem;
@@ -220,8 +225,8 @@ li{
 
 .landing-text h1{
     font-size: 10rem;
-    font-family: 'Playfair Display', cursive;
-    color: var(--clr--gunmetal);
+    font-family: 'Bebas Neue', cursive;
+    color: var(--clr--teal);
     padding: 1rem;
     user-select: none;
 }
@@ -250,12 +255,7 @@ li{
 
 .about-heading h1{
     font-size: 10rem;
-    opacity: 0.3;
-}
-
-.about-heading h6{
-    font-size: 2rem;
-    font-weight: 300rem;
+    color: var(--clr--teal);
 }
 
 .profile-img{
@@ -314,19 +314,22 @@ li{
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 2rem -2px 2rem 0;
-    color: var(--clr--gunmetal);
+    font-size: 2rem;
+    color: var(--clr--grey);
 }
 
 .skill ul{
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 0.5rem;
+    text-align: left;
+    align-items: left;
 }
 
 .icon-container{
     width: 10rem;
     height: 10rem;
-    border: 3px solid var(--clr--thatch);
-    background-color: var(--clr--thatch);
+    border: 3px solid var(--clr--teal);
+    background-color: var(--clr--teal);
     margin-bottom: 2rem;
     display: flex;
     transform: rotate(45deg);
@@ -334,7 +337,7 @@ li{
 }
 
 .icon-container i{
-    color: var(--clr--mushroom);
+    color: #000000;
     font-size: 5rem;
     margin: auto;
     transform: rotate(-45deg);
@@ -364,13 +367,14 @@ li{
 }
 
 .portfolio-description h1{
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 300;
     margin: 1rem 0;
+    color: var(--clr--teal);
 }
 
 .portfolio-description h6{
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: 300;
     opacity: 0.7;
@@ -379,7 +383,7 @@ li{
 .portfolio-description .cta{
     display: inline-block;
     margin-top: 2.5rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     color: #3883ff;
     transition: color 650ms;
@@ -395,9 +399,8 @@ li{
 
 /* Start timeline */
 .timeline ul{
-    border-left: 4px solid var(--clr--thatch);
+    border-left: 4px solid var(--clr--teal);
     border-radius: 0.8rem;
-    background-color: var(--clr--mushroom);
     margin: 0 auto;
     position: relative;
     padding: 5rem;
@@ -408,11 +411,12 @@ li{
 }
 
 .timeline h1{
-    font-size: 2rem;
+    font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 300;
     margin: 1rem;
     opacity: 0.9;
+    color: var(--clr--teal);
 }
 
 .timeline .date{
@@ -441,7 +445,7 @@ li{
     left: -25rem;
     text-align: right;
     min-width: 12rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .timeline .date::after{
@@ -451,54 +455,10 @@ li{
     left: -7.9rem;
     height: 1.5rem;
     width: 1.5rem;
-    background-color: var(--clr--mushroom);
+    background-color: var(--clr--grey);
 }
 
 /* End timeline */
-
-
-/* Start contact form */
-.contact{
-    background-color: #221e3f;
-
-}
-
-form{
-    width: 70%;
-    margin: 0 auto;
-}
-
-form label{
-    font-size: 1.5rem;
-}
-
-input,
-select,
-textarea{
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 5px;
-    border: none;
-    outline: #fd57bf;
-}
-
-input[type="submit"]{
-    width: initial;
-    background-color: #fd57bf;
-    color: #eee;
-    padding: 1rem 2rem;
-    border-radius: 0.8rem;
-    cursor: pointer;
-    transform: background-color 650ms;
-
-}
-
-input[type="submit"]:hover{
-    color: #221e3f;
-    background-color: #ffe838;
-}
-
-/* End contact form */
 
  
 
@@ -507,7 +467,7 @@ input[type="submit"]:hover{
 .copyright{
     width: 100%;
     text-align: center;
-    background-color: var(--clr--thatch);
+    background-color: var(--clr--teal);
     padding: 2rem 0;
     position: relative;
 }
@@ -516,7 +476,7 @@ input[type="submit"]:hover{
     position: absolute;
     width: 5rem;
     height: 5rem;
-    background-color: #eee;
+    background-color: var(--clr--grey);
     top: -2.5rem;
     right: 5rem;
     border-radius: 100%;
@@ -526,20 +486,21 @@ input[type="submit"]:hover{
 }
 
 .up i{
-    color: var(--clr--gunmetal);
+    color: var(--clr--black);
     font-size: 2rem;
     margin: auto;
 }
 
 .copyright p{
     font-size: 1.4rem;
+    color: var(--clr--black);
 }
 /* End footer */
 
 /* Start animations */
 @keyframes pulse{
     0%{
-        box-shadow: 0 0 0 0 rgba(50, 67, 95, 0.99);
+        box-shadow: 0 0 0 0 rgba(156, 161, 170, 0.99);
     }
     70%{
         box-shadow: 0 0 0 2rem rgba(50, 67, 95, 0);
@@ -553,10 +514,6 @@ input[type="submit"]:hover{
 
 /* Start Media Quearies*/
 @media screen and (max-width: 1000px){
-    body{
-        background: url("images/bg2.png") no-repeat center fixed;
-        background-size: cover;
-    }
 
     .landing-text h1{
         font-size: 15rem;
@@ -583,6 +540,7 @@ input[type="submit"]:hover{
 
     .section-heading h1{
         font-size: 3rem;
+        color: var(--clr--teal);
     }
 
     .about-details .nav-list{
