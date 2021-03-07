@@ -38,7 +38,7 @@ a{
 }
 
 p{
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
 }
@@ -53,7 +53,7 @@ img{
 /* Start resuable */
 .container{
     width: 90%;
-    max-width: 130rem;
+    max-width: 120rem;
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -66,7 +66,7 @@ img{
 }
 
 .section-heading h1{
-    font-size: 5rem;
+    font-size: 4rem;
     color: rbga(255, 255, 255, 0.3);
     text-transform: uppercase;
     font-weight: 300;
@@ -99,7 +99,7 @@ img{
 }
 
 .section-heading h6{
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 300;
     color: var(--clr--teal);
 }
@@ -297,7 +297,7 @@ li{
     margin-top: 10rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 10rem;
+    grid-gap: 5rem;
     text-align: center;
 
 }
@@ -307,6 +307,7 @@ li{
     flex-direction: column;
     justify-content: top;
     align-items: center;
+    margin-top: 5rem;
     
 }
 
@@ -319,7 +320,7 @@ li{
 }
 
 .skill ul{
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
     text-align: left;
     align-items: left;
