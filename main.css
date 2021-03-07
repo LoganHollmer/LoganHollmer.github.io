@@ -254,7 +254,7 @@ li{
 }
 
 .about-heading h1{
-    font-size: 10rem;
+    font-size: 7rem;
     color: var(--clr--teal);
 }
 
@@ -368,7 +368,7 @@ li{
 }
 
 .portfolio-description h1{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 300;
     margin: 1rem 0;
     color: var(--clr--teal);
@@ -412,7 +412,7 @@ li{
 }
 
 .timeline h1{
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-transform: uppercase;
     font-weight: 300;
     margin: 1rem;
@@ -536,7 +536,7 @@ li{
     }
 
     .about-heading h1{
-        font-size: 8rem;
+        font-size: 7rem;
     }
 
     .section-heading h1{
